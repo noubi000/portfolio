@@ -94,9 +94,6 @@ photo h2 {
 
 }
 
-.photos :hover {
-    transform: scale(1.1);
-}
 
 .grid {
     display: flex;
@@ -108,9 +105,10 @@ photo h2 {
 .grid img {
     width: 100px;
     border-radius: 5px;
-    box-shadow: 0 0 3px rgba(0 0 0 0 1);
     height: auto;
 }
+.grid img:hover{
+    transform: scale(1.1);
 
 .mon-bouton {
     background-color: aqua;
@@ -207,5 +205,6 @@ footer:hover::after {
 }
 .imac:hover{
     transform: scale(1.1);
+
 
 }
