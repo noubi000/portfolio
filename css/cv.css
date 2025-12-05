@@ -1,9 +1,9 @@
-body.cv-page {
+body {
     font-family: Arial, sans-serif;
     background-color: lavenderblush;
     margin: 0;
     padding: 0;
-    color: lightgoldenrodyellow;
+    color: black;
 }
 
 header {
@@ -12,65 +12,63 @@ header {
     padding: 20px;
     text-align: center;
 }
-
-header h1 {
-    margin: 0;
-    font: size 2em;
+header ul{
+    list-style: none;
+    padding: 0;
+}
+header li{
+    display: inline-block;
+    margin: 0 10px;
+}
+header a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+main section{
+    margin: 25PX auto;
+    max-width: 700px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
 }
 
-header p {
-    margin: 20px 0 0 0;
-    font-style: italic;
-}
 
-section {
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 15px;
-    border-left: 5px solid;
-    box-shadow: 0px 0px 5px rgba(blue);
-}
-
-section h2 {
+main h2,
+main h3,
+main h4,
+main h5 {
     color: salmon;
-    border-bottom: 2px solid;
-    padding-bottom: 5px;
+    margin-top: 0;
+
 }
 
-section h3 {
-    color: salmon;
-    margin-bottom: 5px;
-    border-bottom: 2px solid;
-}
-
-section.item {
-    margin-bottom: 15px;
-    padding-left: 10px;
-    border-left: 3px solid;
-}
-
-section h4 {
-    color: salmon;
-    padding-bottom: 5px;
-    border-bottom: 2px solid;
-}
-
-section h5 {
-    color: salmon;
-    padding-bottom: 5px;
-    border-bottom: 2px solid;
-}
-
-h2:hover,
-h3:hover,
-h4:hover,
-h5:hover {
-    transform: scale(1, 1);
-    
-    transition: all 0.3s ease;
+main h2:hover,
+main h3:hover,
+main h4:hover,
+main h5:hover {
     background: linear-gradient(45deg, sky blue);
-    box-shadow: 0 0 25px rgba(255 0 150 0.7);
-    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255 0 150 0.7);
+    padding: 5px;
+    color: black;
+}
+
+
+main h5{
+     color: salmon;
+    margin-top: 0;
+
+}
+main h5:hover{
+    background: linear-gradient(45deg, sky blue);
+    box-shadow: 0 0 20px rgba(255 0 150 0.7);
+    padding: 5px;
+    color: black;
+
 }
 
 
@@ -103,10 +101,11 @@ footer::after {
     opacity: 0;
     transition: opacity 2s ease;
 }
-
 footer:hover::after {
     opacity: 1;
 }
+
+
 
 
 .social-icons {
@@ -123,8 +122,8 @@ footer:hover::after {
 
 .social-icons i {
     font-size: 30px;
-    color: white;
-    transition: transform 0.3s ease, color 0.3s ease;
+    color:black;
+    transition: 0.3s;
 }
 
 .social-icons i:hover {
@@ -132,7 +131,11 @@ footer:hover::after {
     color: aqua;
 
 }
+ul{
+padding-left: 15px;
+}
 
 li {
     list-style: none;
+    margin: 5px 0;
 }
